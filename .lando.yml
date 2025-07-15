@@ -1,0 +1,4 @@
+name: drupal0p
+recipe: drupal11
+config:
+  webroot: .
