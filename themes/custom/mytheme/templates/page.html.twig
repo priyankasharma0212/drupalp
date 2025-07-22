@@ -1,0 +1,22 @@
+<div class="theme-switcher">
+  <span>Choose Theme Color:</span>
+  <button onclick="setTheme('theme-orange')">Orange</button>
+  <button onclick="setTheme('theme-pink')">Pink</button>
+  <button onclick="setTheme('theme-blue')">Blue</button>
+</div>
+
+<header>
+  {{ page.header }}
+</header>
+
+<main>
+<div class="text-center">
+  <h1>Welcome to My Custom Theme</h1>
+  <p>This is a clean start with theme color: {{ theme_color_class }}</p>
+</div>
+
+
+  {{ page.content }}
+</main>
+
+  

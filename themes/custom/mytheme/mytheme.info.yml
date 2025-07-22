@@ -1,0 +1,13 @@
+name: My Theme
+type: theme
+description: 'Custom Drupal theme with color switching'
+core_version_requirement: ^10 || ^11
+base theme: classy
+
+libraries:
+  - mytheme/theme-colors
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer

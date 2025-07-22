@@ -16,10 +16,12 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "drupal/classy": "^2.0",
         "drupal/core-composer-scaffold": "^11.1",
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/core-vendor-hardening": "^11.1",
+        "drupal/restui": "^1.22",
         "drush/drush": "^13.6"
     },
     "conflict": {

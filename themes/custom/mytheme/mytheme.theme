@@ -1,0 +1,20 @@
+<?php
+
+use Symfony\Component\HttpFoundation\Request;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function mytheme_preprocess_html(array &$variables) {
+  $request = \Drupal::request();
+  $session = $request->getSession();
+
+  $color = $request->query->get('theme');
+  if ($color) {
+    $session->set('theme_color', $color);
+  } else {
+    $color = $session->get('theme_color', 'orange');
+  }
+
+  $variables['theme_color_class'] = 'theme-' . $color;
+}
